@@ -1,0 +1,63 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/shared.scss';
+
+.contactContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: $p-black;
+  color: $p-white;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  .innerContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.message {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.emailHeader {
+  margin-top: 2rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 200px;
+
+
+  .linkButton {
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $p-white;
+
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+      transition: all 0.2s ease-in;
+    
+      width: 120px;
+      cursor: pointer;
+    }
+  }
+}

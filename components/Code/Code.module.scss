@@ -1,0 +1,92 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/shared.scss';
+
+.codeContainer {
+  width: 100%;
+  background-color: $p-white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  flex-direction: column;
+  .innerContent {
+    width: 50%;
+  }
+}
+
+.pText {
+  font-size: 1.3rem;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  border-bottom: 1px solid $p-black;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.imagesContainer {
+  position: relative;
+
+}
+
+.desktopImage {
+  height: 500px;
+}
+
+.mobileImage {
+  height: 400px;
+}
+
+.ffContainer {
+  padding-top: 2rem;
+  color: $p-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $p-black;
+  align-self: stretch;
+  gap: 1.8rem;
+  .text {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+
+  .header {
+    color: $p-black;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    border: 2px solid $p-white;
+    border-radius: 7px;
+    padding: 1.3rem;
+  }
+
+  .mainImages {
+    position: relative;
+
+    .desktopImage {
+
+    }
+
+    .mobileImage {
+
+    }
+
+  }
+}
+
+.bottomBorder {
+  border-bottom: 2px solid $p-white;
+  margin-bottom: 0px;
+}
+
+.extLink {
+  color: #2cb67d;
+}

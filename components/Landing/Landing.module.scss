@@ -1,0 +1,185 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/shared.scss';
+
+.landingContainer { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include xl {
+        flex-direction: row;
+    }
+
+    background-color: $p-white;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.profileLinksContainer {
+
+    background-color: $p-white;
+    height: 10vh;
+    border-bottom: 1px solid $black;
+    width: 100%;
+
+
+    @include md { 
+        height: 100vh;
+        width: 100px;
+        padding: 15px;
+        border-bottom: none;
+    }
+
+    .linksInnerContainer {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @include md { 
+            gap: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.linkButton {
+    
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 3rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        width: 4rem;
+        transition: all 0.25s ease-in;
+        cursor: pointer;
+    }
+}
+
+
+.nameHeading { 
+    font-size: 3em;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-bottom: 3px solid $p-black;
+    border-left: 3px solid $p-black;
+}
+
+.blurb {
+    margin-top: 0px;
+    padding: 10px;
+    border-left: 3px solid $p-black;
+    font-size: 1.3em;
+}
+
+.leftContainer {
+    position: relative;
+    background-color: $p-white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include xl {
+        width: 100%;
+        width: 50%;
+    }
+
+    .innerText { 
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        gap: 20px;
+    }
+}
+
+.divider { 
+    visibility: hidden;
+
+    @include xl {
+        background: black;
+        visibility: visible;
+        width: 5vw;
+        height: 100%;
+
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .dividerText {
+        color: $p-white;
+        font-size: 21px;
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 3px;
+        margin-right: 3px;
+        &:before { 
+            content: '\20DF';
+            margin-right: 3px;
+        }
+    }
+}
+
+.rightContainer {
+    background-color: $p-black;
+    padding-left: 20px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+
+    @include xl {
+        visibility: visible;
+        height: 100%;
+        width: 50%;
+    } 
+}
+
+.sectionLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 6em;
+    height: 200px;
+    color: $p-black;
+
+    &:hover { 
+        font-style: italic;
+        cursor: pointer;
+    }
+}
+
+.funStuff {
+    margin-top: 2rem;
+    align-self: center;
+    background-color: transparent;
+    color: $p-white;
+    font-size: 2rem;
+    font-style: normal;
+
+    &:hover {
+        font-style: italic;
+    }
+}

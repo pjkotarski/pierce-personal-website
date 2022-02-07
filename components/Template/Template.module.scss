@@ -1,0 +1,16 @@
+@import '../../styles/breakpoints.scss';
+
+.templateContainer { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @include md { 
+        flex-direction: row;
+    }
+}
+
+.content { 
+    flex-grow: 1;
+}

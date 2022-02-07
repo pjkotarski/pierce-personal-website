@@ -1,0 +1,29 @@
+@import '../../styles/colors.scss';
+
+.titleContainer {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    .titleIcon {
+        color: #2cb67d;
+        margin: 3px;
+
+        .dollarSign {
+            width: 2rem;
+        }
+
+        .football {
+            width: 3rem;
+        }
+    }
+
+    .title { 
+        margin: 3px;
+        font-size: 4rem;
+    }
+
+    .titleContainer {
+        font-weight: bold;
+    }
+}

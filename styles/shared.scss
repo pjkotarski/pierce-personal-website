@@ -1,0 +1,86 @@
+@import './colors.scss';
+
+.rotate {
+
+    transform: rotate(-90deg);
+  
+  
+    /* Legacy vendor prefixes that you probably don't need... */
+  
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  
+  }
+
+.bigText {
+  font-family: NeutralFaceBold;
+}
+
+.quickFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.outlineTextWhite {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: $p-white;
+}
+
+.outlineTextBlack {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: $p-black;
+}
+
+.textStroke {
+  font-family: NeutralFaceBold;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+}
+
+.quickRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.quickCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeading {
+  font-size: 2.5em;
+  margin-bottom: 0px;
+  padding: 10px;
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+}
+
+.sectionText {
+  margin-top: 0px;
+  padding: 10px;
+  border-left: 3px solid;
+  font-size: 1.3em;
+}
+
+.whiteText { 
+  color: $p-white;
+}
+
+.blackText {
+  color: $p-black;
+}

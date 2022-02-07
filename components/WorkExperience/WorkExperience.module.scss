@@ -1,0 +1,51 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/shared.scss';
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.expHeading {
+  width: 100%;
+  padding: 1rem;
+}
+
+.companyName {
+  font-style: bold;
+  margin-right: 0.5rem;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+.divider {
+  margin: 0px;
+  border-bottom: 3px solid $p-white;
+  width: 100%;
+}
+
+.position {
+  font-style: italic;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+.startDate {
+  margin-right: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.endDate {
+  font-size: 1.3rem;
+  &:before{
+    content: '\2192';
+    margin-right: 0.3rem;
+  }
+}
+
+.jobInfoContainer {
+  font-size: 1.3rem;
+}
+

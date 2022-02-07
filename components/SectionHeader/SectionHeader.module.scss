@@ -1,0 +1,32 @@
+@import '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared.scss';
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5rem;
+    align-self: stretch;
+}
+
+.headerContainerWhite {
+    border-bottom: 3px solid $p-white;
+}
+
+.headerContainerBlack { 
+    border-bottom: 3px solid $p-black;
+
+}
+
+.numberHeader {
+    font-style: italic;
+    margin-right: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sectionHeader {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: line-through;
+}

@@ -1,0 +1,72 @@
+@import '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared.scss';
+
+.navbarContainer {
+    background: $p-white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    border-right: 2px solid $p-black;
+
+
+    @include md {
+        width: 80px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+}
+
+
+.navButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    margin: 10px;
+    background: transparent;
+    border-radius: 10px;
+    width: 70px;
+    @include md {
+        width: 70px;
+    }
+
+    .icon {
+        flex-grow: 1;
+        color: white;
+        height: 3.5em;
+        background-color: $black;
+        outline: none;
+        padding: 10px;
+    }
+    
+    .buttonText {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    &:hover {
+
+        cursor: pointer;
+
+        .buttonText { 
+            text-decoration: line-through;
+        }
+
+        .icon {
+            color: $red;
+        }
+    }
+
+}

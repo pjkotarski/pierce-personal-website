@@ -1,0 +1,22 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/shared.scss';
+
+.iconHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.img {
+  height: 100px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+.nameText {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+}
