@@ -74,7 +74,7 @@ const projectDescriptions = [
 	},
 	{
 		title: 'Try it out',
-		description: 'Test out the application on the demo page here -- all you need to do is enter your name.',
+		description: 'Test out the application on the demo page below -- all you need to do is enter your name.',
 		image: '',
 		link: 'https://ff-auction.com/demo',
 		imgLeft: true
