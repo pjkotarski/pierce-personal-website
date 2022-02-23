@@ -13,6 +13,9 @@ export default function Home({ spotify_data }) {
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
+
+    console.log('SPOTIFY_DATA', spotify_data);
+
     if (spotify_data) { 
       setShowMore(true);
     } else { setShowMore(false) }
