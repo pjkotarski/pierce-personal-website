@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     setIsMounted(true);
   }, []);
 
-  return isMounted ? <Component {...pageProps} /> : <div class="logo">pk</div>
+  return isMounted ? <Component {...pageProps} /> : <div className="logo">pk</div>
   
 }
 
