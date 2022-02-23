@@ -1,5 +1,5 @@
 import { IconBlock } from '../IconBlock/IconBlock.component';
-import { LeftHeader } from '../LeftHeader/LeftHeader.component';
+import { Subheader } from '../Subheader/Subheader.component';
 import { SectionHeader } from '../SectionHeader/SectionHeader.component';
 import { WorkExperience } from '../WorkExperience/WorkExperience.component';
 import styles from './About.module.scss';
@@ -70,10 +70,10 @@ export const About = () => {
 	]
 
 	return (
-		<div className={styles.aboutContainer}>
+		<div className={styles.aboutContainer} id="about">
+			<div className={styles.sectionStartDiv}></div>
+			<SectionHeader number='01.' header='ABOUT'/>
 			<div className={styles.aboutContent}>
-				<SectionHeader number='01.' header='ABOUT'/>
-
 				<div className={styles.textAndPhotoCont}>
 					<p className={styles.aboutMeText}>
 						Hi! I'm Pierce Kotarski, and I'm a full-stack software engineer (who specializes in frontend)
@@ -89,14 +89,14 @@ export const About = () => {
 					<img className={styles.image} src='/images/headshot.png' height='400px'/>
 				</div>
 				<div className={styles.expSection}>
-					<LeftHeader header="experience"/>
+					<Subheader header="experience"/>
 					<div className={styles.workExperienceContainer}>
 						<WorkExperience company="VISA" position="Fullstack Software Engineer" startDate="Oct 2020" endDate="Present">
-							{ fullTimeExperience.map(bullet => <li className={styles.bullets}>{bullet}</li>) }
+							{ fullTimeExperience.map((bullet, ind) => <li className={styles.bullets} key={ind}>{bullet}</li>) }
 						</WorkExperience>
 				
 						<WorkExperience company="VISA" position="Software Engineering Intern" startDate="May 2019" endDate="Aug 2019">
-						{ internExperience.map(bullet => <li className={styles.bullets}>{bullet}</li>) }
+						{ internExperience.map((bullet, ind) => <li className={styles.bullets} key={ind}>{bullet}</li>) }
 						</WorkExperience>
 					</div>
 				</div>
@@ -105,9 +105,9 @@ export const About = () => {
 				<br/>
 
 				<div className={styles.skillsSection}>
-					<LeftHeader header="skills"/>
+					<Subheader header="skills"/>
 					<div className={styles.skills}>
-						{  skills.map(skill => <IconBlock imgSrc={`/images/skills-icons/${skill.imgSrc}`} name={skill.name}/>)}
+						{  skills.map((skill, ind) => <IconBlock imgSrc={`/images/skills-icons/${skill.imgSrc}`} name={skill.name} key={ind}/>)}
 					</div>
 				</div>
 

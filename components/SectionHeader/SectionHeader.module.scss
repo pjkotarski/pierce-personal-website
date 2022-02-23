@@ -5,8 +5,18 @@
 .headerContainer {
     display: flex;
     flex-direction: row;
-    font-size: 2.5rem;
     align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    background-color: $p-white;
+    font-size: 9vw;
+    height: 10rem;
+
+    @include lg {
+        font-size: 2.5rem;
+        justify-content: flex-start;
+        padding-left: 10%;
+    }
 }
 
 .headerContainerWhite {
@@ -19,14 +29,22 @@
 }
 
 .numberHeader {
-    font-style: italic;
-    margin-right: 1.5rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
+
+    display: none;
+
+    @include lg {
+        display: inline;
+        color: $p-black;
+        font-style: italic;
+        margin-right: 1.5rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 .sectionHeader {
+    color: $p-white;
     margin-top: 0px;
     margin-bottom: 0px;
-    text-decoration: line-through;
+    text-decoration: line-through;    
 }

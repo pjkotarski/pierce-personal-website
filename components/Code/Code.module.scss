@@ -4,14 +4,25 @@
 
 .codeContainer {
   width: 100%;
-  background-color: $p-white;
+  background-color: $p-black;
+  color: $p-white;
   display: flex;
   justify-content: start;
   align-items: center;
-
   flex-direction: column;
+  padding-bottom: 5rem;
+
   .innerContent {
-    width: 50%;
+    
+    width: 90%;
+
+    @include lg {
+      width: 750px;
+    }
+  
+    @include xl {
+      width: 1000px;
+    }
   }
 }
 
@@ -37,7 +48,12 @@
 }
 
 .desktopImage {
-  height: 500px;
+  width: 90%;
+
+  @include lg {
+    width: auto;
+    height: 500px;
+  }
 }
 
 .mobileImage {
@@ -56,7 +72,15 @@
   gap: 1.8rem;
   .text {
     font-size: 1.5rem;
-    width: 50%;
+    
+    width: 90%;
+    @include lg {
+      width: 750px;
+    }
+  
+    @include xl {
+      width: 1000px;
+    }
   }
 
   .header {
@@ -68,18 +92,6 @@
     padding: 1.3rem;
   }
 
-  .mainImages {
-    position: relative;
-
-    .desktopImage {
-
-    }
-
-    .mobileImage {
-
-    }
-
-  }
 }
 
 .bottomBorder {

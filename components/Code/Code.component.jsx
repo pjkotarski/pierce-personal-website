@@ -6,9 +6,10 @@ import styles from './Code.module.scss';
 export const Code = () => {
 	
 	return (
-		<div className={styles.codeContainer}>
+		<div className={styles.codeContainer} id="code">
+			<div className={styles.sectionStartDiv}/>
+			<SectionHeader number='02.' header='CODE'/>
 			<div className={styles.innerContent}>
-				<SectionHeader number='02.' header='CODE' blackText={true}/>
 				<p className={styles.pText}>
 					I'm always pushing myself to build new stuff in the time that I can find outside of work. I find it's the best 
 					way to learn about new technologies that I don't get the opportunity to work with in my day to day job. 
@@ -27,9 +28,7 @@ export const Code = () => {
 					through their platform. Therefore, I built this app, and I'm proud to say that we used it for a few auctions before the season ended. 
 				</p>
 
-				<div className={styles.mainImages}>
-					<img className={styles.desktopImage} src='/images/ff-auction/auction-desktop.png'></img>
-				</div>
+				<img className={styles.desktopImage} src='/images/ff-auction/auction-main.png'></img>
 
 				<p className={styles.text}>
 					The concept of the application itself is fairly simple. A user can login through OAuth (Google) and connect with 
@@ -41,11 +40,11 @@ export const Code = () => {
 					Actual implementation of the app proved to be far more coplicated but really interesting. Feel free to read about some
 					of these main issues and solutions below.  and even try out the demo of the 
 					application <a className={styles.extLink} target="_blank" href="http://ff-auction.com/demo">here.</a> 
-				</p>
+			</p>
 
 
-				{ projectDescriptions.map(description => {
-					return <ProjectDescription descObj={description}/>
+				{ projectDescriptions.map((description, ind) => {
+					return <ProjectDescription descObj={description} key={ind}/>
 				})}
 			</div>
 		</div>

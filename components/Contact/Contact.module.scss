@@ -8,14 +8,25 @@
   background-color: $p-black;
   color: $p-white;
   display: flex;
-  justify-content: center;
-  padding: 3rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   .innerContent {
-    width: 50%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+
+    @include lg {
+      width: 750px;
+    }
+  
+    @include xl {
+      width: 1000px;
+    }
+
   }
 }
 
@@ -25,14 +36,18 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  width: 80%;
+  width: 90%;
   margin-bottom: 2rem;
 }
 
 .emailHeader {
   margin-top: 2rem;
-  font-size: 4rem;
   margin-bottom: 1rem;
+  font-size: 6vw;
+  text-align: center;
+  @include lg {
+    font-size: 4rem;
+  } 
 }
 
 .linksContainer {

@@ -4,8 +4,8 @@ export const WorkExperience = ( { company, position, startDate, endDate, childre
   return (
     <div className={styles.experienceContainer}>
       <div className={styles.expHeading}>
-        <div className={styles.quickRow}>
-          <p className={styles.companyName}>{company} -</p>
+        <div className={styles.flexRow}>
+          <p className={styles.companyName}>{company}</p>
           <p className={styles.position}>{position}</p>
         </div>
         <div className={styles.quickRow}>

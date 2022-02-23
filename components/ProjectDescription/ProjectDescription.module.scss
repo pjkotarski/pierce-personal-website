@@ -6,20 +6,41 @@
   display: flex;
   justify-content: flex-start;
   gap: 2rem;
-  width: 50%;
+  width: 90%;
+  @include lg {
+    width: 750px;
+  }
+
+  @include xl {
+    width: 1000px;
+  }
 }
 
 .imageLeft {
-  flex-direction: row;
+  
+  flex-direction: column-reverse;
+
+  @include lg {
+    flex-direction: row;
+  }
 }
 
 .imageRight {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  @include lg {
+    flex-direction: row-reverse;
+  }
 }
 
 .image {
-  height: 400px;
   border-radius: 5px;
+  width: 90%;
+
+  @include lg { 
+    width: auto;
+    height: 400px;
+  }
 }
 
 .content {
@@ -43,5 +64,5 @@
 
 .link {
   color: #2cb67d;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }

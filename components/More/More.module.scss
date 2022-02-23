@@ -3,17 +3,70 @@
 @import '../../styles/shared.scss';
 
 .moreContainer {
+
   background-color: $p-white;
   color: $p-black;
-
   width: 100%;
-  min-height: 100vh;
-  
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 
   .innerContainer {
-    width: 50%;
+    width: 100%;
+    background-color: $p-black;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
+}
+
+.musicSection {
+  padding: 5rem;
+  width: 80%;
+  display: flex;
+  color: $p-white;
+  flex-direction: column;
+}
+
+.musicContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include xl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.artistContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 13rem;
+  height: 18rem;
+}
+
+.artistImage {
+  height: 12rem;
+  width: 12rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid $p-white;
+}
+
+.artistName {
+  margin-top: 0px;
+  font-size: 1.5rem;
 }

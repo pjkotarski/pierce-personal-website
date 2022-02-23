@@ -1,0 +1,30 @@
+@import '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+@import '../../styles/shared.scss';
+
+.subheaderContainer {
+  display: flex;
+  justify-content: center;
+  background-color: $p-white;
+  border-radius: 5px;
+
+  @include lg {
+    background-color: $p-black;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    font-size: 5rem;
+    padding-right: 3rem;
+    align-self: stretch;
+    border-right: 3px solid $p-white;
+  }
+}
+
+.header {
+  color: $p-black;
+  font-size: 3rem;
+  @include lg {
+    color: $p-white;
+    @include rotate;
+  }
+}
