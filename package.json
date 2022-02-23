@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "deploy": "pm2 start --name=ui npm -- start",
-    "deploy:prod": "npm run start && npm run deploy",
+    "deploy:prod": "npm run build && npm run deploy",
     "lint": "next lint"
   },
   "dependencies": {
