@@ -14,8 +14,6 @@ export default function Home({ spotify_data }) {
 
   useEffect(() => {
 
-    console.log('SPOTIFY_DATA', spotify_data);
-
     if (spotify_data) { 
       setShowMore(true);
     } else { setShowMore(false) }
@@ -40,11 +38,10 @@ export default function Home({ spotify_data }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   
   try {
     const { data: spotify_data } = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/top-artists`);
-    console.log('gotten artists and stuff', spotify_data);
     return {
       props: {
         spotify_data
