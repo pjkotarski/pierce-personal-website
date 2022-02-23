@@ -4,7 +4,7 @@ import { stringify } from 'querystring';
 const credentials = {
   clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
   clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-  redirectUri: 'http://localhost:3000/config/'
+  redirectUri: `${process.env.NEXT_PUBLIC_URL}/config/`
 }
 
 const bufferedCredentials = new Buffer(credentials.clientId  + ':' + credentials.clientSecret).toString('base64');

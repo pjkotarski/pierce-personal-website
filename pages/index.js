@@ -28,7 +28,7 @@ export default function Home({ spotify_data }) {
 }
 
 export async function getStaticProps() {
-  const { data: spotify_data } = await axios.get('http://localhost:3000/api/top-artists');
+  const { data: spotify_data } = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/top-artists`);
 
   return {
     props: {
