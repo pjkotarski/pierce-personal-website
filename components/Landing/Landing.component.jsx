@@ -18,7 +18,7 @@ export const Landing = ({ showMore }) => {
 					</div>
 					<div>
 						<a className={styles.linkCont} href="https://www.linkedin.com/in/pierce-kotarski/" target="_blank" rel="noreferrer">
-							<FontAwesomeIcon className={styles.linkButton} icon={faLinkedin}/>
+							<FontAwesomeIcon className={styles.linkButton} icon={faLinkedin} />
 						</a>
 					</div>
 					<Link href="#contact">

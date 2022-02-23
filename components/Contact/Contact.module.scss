@@ -46,7 +46,7 @@
   font-size: 6vw;
   text-align: center;
   @include lg {
-    font-size: 4rem;
+    font-size: 4vw;
   } 
 }
 
@@ -60,7 +60,7 @@
 
 
   .linkButton {
-    width: 100px;
+    font-size: 5rem;
     background-color: transparent;
     border: none;
     outline: none;
@@ -71,16 +71,8 @@
     &:hover {
       transition: all 0.2s ease-in;
     
-      width: 120px;
+      font-size: 6rem;
       cursor: pointer;
-    }
-  }
-
-  .resume {
-    width: 80px;
-
-    &:hover {
-      width: 100px;
     }
   }
 }

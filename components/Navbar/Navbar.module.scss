@@ -24,8 +24,7 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
-        height: 3rem;
-        width: 3rem;
+        font-size: 2.6rem;
         background-color: $p-white;
         border: none;
         outline: none;
@@ -55,6 +54,8 @@
 
 .hideNavbar {
     background-color: $p-black;
+    border-top: 3px solid $p-white;
+    border-bottom: 3px solid $p-white;
     @include lg {
         background-color: $p-white;
     }
@@ -154,8 +155,7 @@
         right: 1.5rem;
         color: $p-black;
         background-color: $p-white;
-        height: 2.7rem;
-        width: 2.7rem;
+        font-size: 2.6rem;
         border: none;
 
         @include lg {

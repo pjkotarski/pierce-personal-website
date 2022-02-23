@@ -47,21 +47,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;  
 }
 
 .linkButton {
     background-color: transparent;
     border: none;
     outline: none;
-    width: 3rem;
+    font-size: 3.7rem;
     transition: all 0.2s ease-in-out;
     &:hover {
         transition: all 0.2s ease-in;
-        width: 3.8rem;
         cursor: pointer;
+        font-size: 4.2rem;
     }
 }
 

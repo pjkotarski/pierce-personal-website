@@ -22,7 +22,7 @@ export const Contact = () => {
 					<a className={styles.linkButton} href="https://www.linkedin.com/in/pierce-kotarski/" target="_blank" rel="noreferrer">
 						<FontAwesomeIcon icon={faLinkedin}/>
 					</a>
-					<a className={`${styles.linkButton} ${styles.resume}`} href="/p-kotarski-resume.pdf" target="_blank" rel="noreferrer">
+					<a className={`${styles.linkButton}`} href="/p-kotarski-resume.pdf" target="_blank" rel="noreferrer">
 						<FontAwesomeIcon icon={faFilePdf}/>
 					</a>
 				</div>

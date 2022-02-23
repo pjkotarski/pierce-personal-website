@@ -61,3 +61,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Blond;
+  color: #1c1a20;
+  font-size: 10rem;
+}
