@@ -25,8 +25,9 @@
         top: 1rem;
         right: 1rem;
         font-size: 2.6rem;
+        color: $p-black;
         background-color: $p-white;
-        border: none;
+        border: 1px solid blue;
         outline: none;
 
         border-radius: 5px;
@@ -38,12 +39,12 @@
 
     .showMenuBar {
         transition: 0.5s all ease-in-out;
-        right: 1rem;
+        right: 0rem;
     }
 
     .hideMenuBar {
         transition: 0.5s all ease-in-out;
-        right: -5rem;
+        right: -10rem;
     }
 
 }
