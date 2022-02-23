@@ -14,7 +14,7 @@ export const More = ({ spotify_data }) => {
         <div className={styles.musicSection}>
           <div className={styles.musicContainer}>
             {spotify_data.map((artist, ind) => 
-              <div className={styles.artistContainer}>
+              <div className={styles.artistContainer} key={ind}>
                 <img className={styles.artistImage}src={artist.imgUrl}/>
                 <p className={styles.artistName}>{artist.name}</p>
               </div>

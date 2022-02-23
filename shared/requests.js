@@ -4,7 +4,7 @@ import { stringify } from 'querystring';
 const credentials = {
   clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
   clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-  redirectUri: `${process.env.NEXT_PUBLIC_URL}/config/`
+  redirectUri: `${process.env.NEXT_PUBLIC_URL}/config`
 }
 
 const bufferedCredentials = new Buffer(credentials.clientId  + ':' + credentials.clientSecret).toString('base64');
@@ -39,7 +39,7 @@ export const registerSpotifyUser = (code) => {
 }
 
 
-export const useRefreshToken = (refresh_token) => {
+export const postRefreshToken = (refresh_token) => {
   axios.post('https://accounts.spotify.com/api/token', 
   stringify({
     'grant_type': 'refresh_token',

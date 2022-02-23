@@ -1,10 +1,15 @@
 import { filterArtists } from '../../shared/filterArtists';
-import { getTopArtists, useRefreshToken } from '../../shared/requests';
+import { getTopArtists, postRefreshToken,  } from '../../shared/requests';
 import { getSpotifyAuth, saveSpotifyAuth } from '../../shared/storage';
 
 export default async function handler(req, res) {
 
   const spotifyData = getSpotifyAuth();
+
+  if (spotifyData === -1) {
+    res.status(401).send('please authenticate spotify');
+    return;
+  }
 
   const access_token = spotifyData.access_token;
   const refresh_token = spotifyData.refresh_token;
@@ -22,7 +27,7 @@ export default async function handler(req, res) {
     topArtists = spotify_data.data;
   } else if (spotify_data.data && spotify_data.status === 401) {
 
-    const refreshTokenResponse = await useRefreshToken(refresh_token);
+    const refreshTokenResponse = await postRefreshToken(refresh_token);
 
     if (refreshTokenResponse.data && refreshTokenResponse.status === 200) {
       saveSpotifyAuth({

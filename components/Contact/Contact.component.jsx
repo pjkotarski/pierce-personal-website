@@ -12,16 +12,16 @@ export const Contact = () => {
 			<div className={styles.innerContent}>
 				<p className={styles.message}>
 					If you would like to say hi and get in contact, just drop me an email -- 
-					I'm always open to hearing from people. Thanks!
+					I&apos;m always open to hearing from people. Thanks!
 				</p>
 				<h4 className={`${styles.emailHeader} ${styles.bigText}`}>pjkotarski@gmail.com</h4>
 				<div className={styles.linksContainer}>
-					<button className={styles.linkButton}>
+					<a className={styles.linkButton} href="https://github.com/pjkotarski" target="_blank" rel="noreferrer">
 						<FontAwesomeIcon icon={faGithub}/>
-					</button>
-					<button className={styles.linkButton}>
+					</a>
+					<a className={styles.linkButton} href="https://www.linkedin.com/in/pierce-kotarski/" target="_blank" rel="noreferrer">
 						<FontAwesomeIcon icon={faLinkedin}/>
-					</button>
+					</a>
 					<button className={styles.linkButton}>
 						<FontAwesomeIcon icon={faEnvelope}/>
 					</button>

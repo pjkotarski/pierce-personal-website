@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Head from 'next/head'
+import { useEffect, useState } from 'react';
 import { About } from '../components/About/About.component';
 import { Code } from '../components/Code/Code.component';
 import { Contact } from '../components/Contact/Contact.component';
@@ -8,6 +9,15 @@ import { More } from '../components/More/More.component';
 import { Template } from '../components/Template/Template.component'
 
 export default function Home({ spotify_data }) {
+
+  const [showMore, setShowMore] = useState(false);
+
+  useEffect(() => {
+    if (spotify_data) { 
+      setShowMore(true);
+    } else { setShowMore(false) }
+  }, [spotify_data]);
+
   return (
     <>
       <Head>
@@ -15,12 +25,12 @@ export default function Home({ spotify_data }) {
         <meta name="Pierce Kotarski personal site" content="Pierce Kotarski front-end engineer pesonal site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Landing/>
-      <Template>
+      <Landing showMore={showMore}/>
+      <Template showMore={showMore}>
         <About/>
         <Code/>
         <Contact/>
-        <More spotify_data={spotify_data}/>
+        { spotify_data && <More spotify_data={spotify_data}/> }
       </Template>
 
     </>
@@ -28,11 +38,23 @@ export default function Home({ spotify_data }) {
 }
 
 export async function getStaticProps() {
-  const { data: spotify_data } = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/top-artists`);
-
-  return {
-    props: {
-      spotify_data
+  
+  try {
+    const { data: spotify_data } = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/top-artists`);
+    
+    return {
+      props: {
+        spotify_data
+      }
     }
+  } catch(e) {
+    const spotify_data = null;
+    
+    return {
+      props: {
+        spotify_data
+      }
+    }
+
   }
 }

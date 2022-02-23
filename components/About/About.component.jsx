@@ -76,7 +76,7 @@ export const About = () => {
 			<div className={styles.aboutContent}>
 				<div className={styles.textAndPhotoCont}>
 					<p className={styles.aboutMeText}>
-						Hi! I'm Pierce Kotarski, and I'm a full-stack software engineer (who specializes in frontend)
+						Hi! I&apos;m Pierce Kotarski, and I&apos;m a full-stack software engineer (who specializes in frontend)
 						 based out of Austin, Texas.
 						<br/><br/>
 						My passion is learning, and I strive to bring that passion to my life as a software engineer every day
@@ -84,7 +84,7 @@ export const About = () => {
 						I would probably start talking your ear off about monorepos and the challenges of making easily reusable
 						components. 
 						<br/><br/>
-						Come take a look at the things I've been building recently.
+						Come take a look at the things I&apos;ve been building recently.
 					</p>
 					<img className={styles.image} src='/images/headshot.png' height='400px'/>
 				</div>

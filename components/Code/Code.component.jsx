@@ -11,11 +11,11 @@ export const Code = () => {
 			<SectionHeader number='02.' header='CODE'/>
 			<div className={styles.innerContent}>
 				<p className={styles.pText}>
-					I'm always pushing myself to build new stuff in the time that I can find outside of work. I find it's the best 
-					way to learn about new technologies that I don't get the opportunity to work with in my day to day job. 
+					I&apos;m always pushing myself to build new stuff in the time that I can find outside of work. I find it&apos;s the best 
+					way to learn about new technologies that I don&apos;t get the opportunity to work with in my day to day job. 
 					<br/>
 					<br/>
-					Here's just a few things I've been working on -- along with some of the challanges and features that came with each. 
+					Here&apos;s just a few things I&apos;ve been working on -- along with some of the challanges and features that came with each. 
 				</p>
 			</div>
 
@@ -24,8 +24,8 @@ export const Code = () => {
 				<Title className={styles.bottomBorder}/>
 
 				<p className={styles.text}>
-					A fantasy football league I'm in does a public auction for our weekly waiver wire players, but ESPN only offers a silent auction
-					through their platform. Therefore, I built this app, and I'm proud to say that we used it for a few auctions before the season ended. 
+					A fantasy football league I&apos;m in does a public auction for our weekly waiver wire players, but ESPN only offers a silent auction
+					through their platform. Therefore, I built this app, and I&apos;m proud to say that we used it for a few auctions before the season ended. 
 				</p>
 
 				<img className={styles.desktopImage} src='/images/ff-auction/auction-main.png'></img>
@@ -39,7 +39,7 @@ export const Code = () => {
 
 					Actual implementation of the app proved to be far more coplicated but really interesting. Feel free to read about some
 					of these main issues and solutions below.  and even try out the demo of the 
-					application <a className={styles.extLink} target="_blank" href="http://ff-auction.com/demo">here.</a> 
+					application <a className={styles.extLink} href="https://ff-auction.com/demo" target="_blank" rel="noreferrer">here.</a> 
 			</p>
 
 

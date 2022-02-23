@@ -3,12 +3,12 @@ import path from 'path';
 
 export const getSpotifyAuth = () => {
 
-  try { 
+
+  try {
     const rawSpotifyAuthJson = fs.readFileSync(path.join(__dirname, '../../spotify.json'), 'utf-8');
     return JSON.parse(rawSpotifyAuthJson);
   } catch(e) {
-    console.log('could not parse the spotify auth json');
-    throw e;
+    return -1;
   }
 }
 

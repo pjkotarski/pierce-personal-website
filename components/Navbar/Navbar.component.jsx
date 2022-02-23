@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Navbar.module.scss';
 
-export const Navbar = () => {
+export const Navbar = ({ showMore }) => {
 
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -105,11 +105,11 @@ export const Navbar = () => {
 								<p className={styles.buttonText}>contact</p>
 							</a>
 						</Link>
-						<Link href="#more">
+						{ showMore && <Link href="#more">
 							<a className={`${styles.navLink}`} onClick={() => setIsOpen(false)}>
 								<p className={styles.buttonText}>more</p>
 							</a>
-						</Link>
+						</Link>}
 					</div>
 				</div>
 			</div>
