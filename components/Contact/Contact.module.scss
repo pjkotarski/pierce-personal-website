@@ -75,4 +75,12 @@
       cursor: pointer;
     }
   }
+
+  .resume {
+    width: 80px;
+
+    &:hover {
+      width: 100px;
+    }
+  }
 }

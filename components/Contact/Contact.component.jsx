@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SectionHeader } from '../SectionHeader/SectionHeader.component';
 import styles from './Contact.module.scss';
@@ -22,9 +22,9 @@ export const Contact = () => {
 					<a className={styles.linkButton} href="https://www.linkedin.com/in/pierce-kotarski/" target="_blank" rel="noreferrer">
 						<FontAwesomeIcon icon={faLinkedin}/>
 					</a>
-					<button className={styles.linkButton}>
-						<FontAwesomeIcon icon={faEnvelope}/>
-					</button>
+					<a className={`${styles.linkButton} ${styles.resume}`} href="/p-kotarski-resume.pdf" target="_blank" rel="noreferrer">
+						<FontAwesomeIcon icon={faFilePdf}/>
+					</a>
 				</div>
 
 
