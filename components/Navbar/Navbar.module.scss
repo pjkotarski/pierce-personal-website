@@ -24,10 +24,11 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
+        width: 3rem;
         font-size: 2.6rem;
         color: $p-black;
         background-color: $p-white;
-        border: 1px solid blue;
+        border: none;
         outline: none;
 
         border-radius: 5px;
@@ -39,7 +40,7 @@
 
     .showMenuBar {
         transition: 0.5s all ease-in-out;
-        right: 0rem;
+        right: 1rem;
     }
 
     .hideMenuBar {
