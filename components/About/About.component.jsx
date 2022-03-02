@@ -7,11 +7,11 @@ import styles from './About.module.scss';
 export const About = () => {
 
 	const fullTimeExperience = [
-		"Built and maintained multiple consumer-facing web applications and reusable UI component libraries using Angular (Typescript), including VISA's web authentication portal.",
+		"Built and maintained multiple consumer-facing web applications and reusable UI component libraries using Angular (Typescript), including VISA’s web authentication portal",
 		"Leveraged Vue.js to build a web-components library of easily shareable UI components hosted on a CDN.",
 		"Spearheaded redesign and introduction of new features in user-facing application; resulted in reduction of page load times by up to 20%.",
-		"Lead effort to configure JavaScript bridges and deep links to VISA’s auth portal for integration with phone apps.",
-		"Designed a dynamic and authorable content management system for one of VISA’s applications leveraging AEM.",
+		"Led effort to migrate UI applications to monorepo architecture by leveraging NPM workspaces, writing new CI/CD pipelines with Jenkins, and customizing Nginx configurations.",
+		"Configured JavaScript bridges and deep links to VISA’s auth portal for integration with phone applications.",
 		"Developed Java microservices using SpringBoot and introduced key new features such as password recovery via SMS."
 	];
 
