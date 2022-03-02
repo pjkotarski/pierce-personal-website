@@ -24,7 +24,7 @@ export default function Home({ spotify_data }) {
       <Head>
         <title>Pierce Codes</title>
         <meta name="Pierce Kotarski personal site" content="Pierce Kotarski front-end engineer pesonal site" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/site-icon.png" />
       </Head>
       <Landing showMore={showMore}/>
       <Template showMore={showMore}>
